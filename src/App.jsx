@@ -3,12 +3,27 @@ function App() {
 
   return (
     <div style={{background: "#c8dceb", height:"100vh"}}>
-      <Postcomponent/>
+      <div style={{display:"flex",justifyContent:"center"}}>
+        <div>
+          <div>
+            <br />
+            <Postcomponent/>
+          </div>
+          <div>
+            <br />
+            <Postcomponent/>
+          </div>
+          <div>
+            <br />
+            <Postcomponent/>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
 
-const style = {width : 200 , backgroundColor:"white",borderRadius:10,borderColor:"gray",borderWidth:1}
+const style = {width : 200 , backgroundColor:"white",borderRadius:10,borderColor:"gray",borderWidth:1,padding:20}
 
 function Postcomponent(){
   return <div style={style}>
