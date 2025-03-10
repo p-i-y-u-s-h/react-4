@@ -11,17 +11,22 @@ function App() {
 
 
 const ToggleMessage = () => {
-  const [isVisible , setIsVisible] = useState(false);
+
+  let [isVisible,setIsInterval]=useState(true);
+
+  function toggle(){
+    setIsInterval(!isVisible);
+  }
 
   return (
     <div>
-      <button onClick={() => setIsVisible(!isVisible)}>
+      <button onClick={toggle}>
         toggle Message
       </button>
-      {isVisible && <P>this Message is conditionally rendered!</P>}
+      {isVisible && <p>this Message is conditionally rendered!</p>}
     </div>
   );
-}
+};
 
 
 
