@@ -1,6 +1,12 @@
 
-const style = {width:200, backgroundColor:"white", borderRadius:10, borderColor:"gray", borderWidth:1,padding:20}
-
+const style = { 
+    width: 200, 
+    backgroundColor: "white", 
+    borderRadius: 10, 
+    border: "1px solid gray", 
+    padding: 20 
+  };
+  
 export function Postcomponent({name,subtitle,time,image,description}){
     return <div style={style}>
         <div style={{display:"flex"}}>
